@@ -46,5 +46,5 @@ echo '{
 
 ### Start the server
 npm start
-
-### Then open your browser to http://localhost:3000
+Then open your browser to http://localhost:3000
+###(I developed this project in CodeSandbox Devbox)
