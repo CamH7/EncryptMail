@@ -45,7 +45,7 @@ echo '{
 }' > audit.json
 
 ### Start the server
-npm start\
+npm start
 
 Then open your browser to http://localhost:3000
 
