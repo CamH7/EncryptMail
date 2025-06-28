@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/512/552/552486.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>MyMail</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="logoimg"
+        src="https://cdn-icons-png.flaticon.com/512/552/552486.png"
+        alt="MyMail Logo"
+      />
+      <div class="brand">EncryptMail</div>
+      <div class="avatar" id="avatarBtn">A</div>
+      <div class="dropdown" id="acctDropdown">
+        <div class="cred"><span>User:</span><span id="dd-user"></span></div>
+        <div class="cred"><span>Pass:</span><span id="dd-pass"></span></div>
+        <button id="dd-logout" class="btn">Logout</button>
+        <button id="dd-delete" class="btn" style="background: #e74c3c">
+          Delete Account
+        </button>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <button id="composeBtn"><i class="fa fa-pencil-alt"></i> Compose</button>
+      <br /><br />
+      <button id="tab-inbox">Inbox</button>
+      <button id="tab-sent">Sent</button>
+      <button id="tab-drafts">Drafts</button>
+    </aside>
+
+    <main class="main">
+      <div id="contentArea"></div>
+    </main>
+
+    <!-- Compose/Draft Modal -->
+    <div class="modal" id="composeModal">
+      <div class="modal-content">
+        <h3>New Message</h3>
+        <div class="input-group">
+          <i class="fa fa-user"></i>
+          <input id="to" placeholder="To" />
+        </div>
+        <div class="input-group">
+          <i class="fa fa-heading"></i>
+          <input id="subject" placeholder="Subject" />
+        </div>
+        <textarea id="body" placeholder="Your message…"></textarea>
+        <div style="display: flex; justify-content: space-between">
+          <button id="saveDraft" class="btn" style="background: #aaa">
+            Save Draft
+          </button>
+          <button id="send" class="btn">Send</button>
+        </div>
+        <button
+          id="closeCompose"
+          class="btn"
+          style="margin-top: 0.5rem; background: #ddd"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+
+    <!-- Delete Account Confirmation -->
+    <div class="modal" id="confirmDeleteModal">
+      <div class="modal-content">
+        <h3>Delete Account?</h3>
+        <p>Are you sure? This cannot be undone.</p>
+        <button id="deleteYes" class="btn" style="background: #e74c3c">
+          Yes, Delete
+        </button>
+        <button
+          id="deleteNo"
+          class="btn"
+          style="background: #aaa; margin-left: 0.5rem"
+        >
+          No
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
