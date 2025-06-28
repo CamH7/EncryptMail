@@ -21,14 +21,14 @@ A full-stack minimalist webmail system using native browser RSA-OAEP encryption 
 
 ## Setup
 
-# Clone the repository
+### Clone the repository
 git clone https://github.com/CamH7/EncryptMail.git
 cd EncryptMail
 
-# Install dependencies
+### Install dependencies
 npm install
 
-# Create initial JSON files with default content
+### Create initial JSON files with default content
 echo '{
   "users": [],
   "messages": []
@@ -44,7 +44,7 @@ echo '{
   "messagesSent": []
 }' > audit.json
 
-# Start the server
+### Start the server
 npm start
 
-# Then open your browser to http://localhost:3000
+### Then open your browser to http://localhost:3000
