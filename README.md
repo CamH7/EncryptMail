@@ -23,6 +23,7 @@ A full-stack minimalist webmail system using native browser RSA-OAEP encryption 
 
 ### Clone the repository
 git clone https://github.com/CamH7/EncryptMail.git
+
 cd EncryptMail
 
 ### Install dependencies
