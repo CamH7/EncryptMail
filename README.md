@@ -45,6 +45,8 @@ echo '{
 }' > audit.json
 
 ### Start the server
-npm start
+npm start\
+
 Then open your browser to http://localhost:3000
-###(I developed this project in CodeSandbox Devbox)
+
+(I developed this project in CodeSandbox Devbox)
